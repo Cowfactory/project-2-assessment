@@ -1,0 +1,7 @@
+{% block content %}
+<form method="post">{% csrf_token %}
+    <h3>Add Widget</h3>
+    {{ form.as_p }}
+    <input type="submit" value="Add Widget">
+</form>
+{% endblock %}
